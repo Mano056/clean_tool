@@ -38,13 +38,15 @@ python cleanup.py run --path "YOUR_PATH" --recursive
 
 ### Execute changes
 
-Actually move the files after reviewing the dry run:
+Actually, move the files after reviewing the dry run:
 
 ```bash
 python cleanup.py run --path "C:\Users\YourName\Desktop" --recursive --execute
 ```
 
 ### Empty Trash
+
+**Warning:** `empty-trash` does not support dry-run mode. Once confirmed, deletion is permanent.
 
 Permanently delete everything inside the `Trash` folder:
 
